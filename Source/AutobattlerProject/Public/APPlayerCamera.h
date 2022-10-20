@@ -3,8 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AutobattlerProject/OBSEnums.h"
 #include "GameFramework/Pawn.h"
 #include "APPlayerCamera.generated.h"
+
 
 UCLASS()
 class AUTOBATTLERPROJECT_API AAPPlayerCamera : public APawn

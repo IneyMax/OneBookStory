@@ -14,6 +14,11 @@ FPrimaryAssetType UOBSItem::GetItemType() const
 	return ItemType;
 }
 
+FOBSItemInfo UOBSItem::GetItemInfo() const
+{
+	return ItemInfo;
+}
+
 FPrimaryAssetId UOBSItem::GetPrimaryAssetId() const
 {
 	return Super::GetPrimaryAssetId();

@@ -3,12 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "OBSItemInfo.h"
 #include "Engine/DataAsset.h"
 #include "OBSItem.generated.h"
 
 /**
  * 
  */
+
 UCLASS()
 class AUTOBATTLERPROJECT_API UOBSItem : public UPrimaryDataAsset
 {
@@ -18,22 +20,16 @@ public:
 	/** Constructor */
 	UOBSItem(){}
 
+protected:
 	/** Type of this item, set in native parent class */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, BlueprintGetter = GetItemType, Category = Item)
 	FPrimaryAssetType ItemType;
 
 	/** User-visible short name */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Item)
-	FText ItemName;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintGetter = GetItemInfo, Category = Item)
+	FOBSItemInfo ItemInfo;
 
-	/** User-visible long description */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Item)
-	FText ItemDescription;
-
-	/** Unique tag */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Item)
-	FName UniqueTag;
-
+public:
 	/** Returns the logical name, equivalent to the primary asset id */
 	UFUNCTION(BlueprintCallable, Category = Item)
 	FString GetIdentifierString() const;
@@ -42,6 +38,10 @@ public:
 	UFUNCTION(BlueprintGetter, Category = Item)
 	FPrimaryAssetType GetItemType() const;
 
+	/** Returns the logical name, equivalent to the primary asset id */
+	UFUNCTION(BlueprintGetter, Category = Item)
+	FOBSItemInfo GetItemInfo() const;
+	
 	/** Overridden to use saved type */
 	virtual FPrimaryAssetId GetPrimaryAssetId() const override;
 };

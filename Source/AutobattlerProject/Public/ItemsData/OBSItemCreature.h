@@ -19,4 +19,7 @@ class AUTOBATTLERPROJECT_API UOBSItemCreature : public UOBSItem
 	{
 		ItemType = UOBSAssetManager::SpellItemType;
 	}
+
+public:
+	
 };
