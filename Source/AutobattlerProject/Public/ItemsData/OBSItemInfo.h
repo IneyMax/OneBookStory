@@ -41,14 +41,11 @@ struct AUTOBATTLERPROJECT_API FOBSCreatureInfo
 {
 	GENERATED_BODY()
 	
-	FOBSCreatureInfo(): Initiative(0), Attack(0), Health(0)
+	FOBSCreatureInfo(): Attack(0), Health(0)
 	{
 	};
 	
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Initiative;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	int32 Attack;
 
