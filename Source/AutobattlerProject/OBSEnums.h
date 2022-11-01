@@ -7,8 +7,8 @@ UENUM(BlueprintType)
 enum class EItemType : uint8
 {
 	None UMETA(DisplayName = "None"),
-	Type1 UMETA(DisplayName = "Creature"),
-	Type2 UMETA(DisplayName = "Weapon"),
+	Creature UMETA(DisplayName = "Creature"),
+	Weapon UMETA(DisplayName = "Weapon"),
 	Max  UMETA ( Hidden )
 };
 ENUM_RANGE_BY_COUNT(EItemType, EItemType::Max)
@@ -65,8 +65,9 @@ UENUM(BlueprintType)
 enum class ECreatureStats : uint8
 {
 	None UMETA(DisplayName = "None"),
-	Attack UMETA(DisplayName = "Item"),
-	Health UMETA(DisplayName = "Placement"),
+	Attack UMETA(DisplayName = "Attack"),
+	Health UMETA(DisplayName = "Health"),
 	Max  UMETA ( Hidden )
 };
 ENUM_RANGE_BY_COUNT(ECreatureStats, ECreatureStats::Max)
+

@@ -5,20 +5,20 @@
 #include "CoreMinimal.h"
 #include "OBSItemInfo.h"
 #include "Engine/DataAsset.h"
-#include "OBSItem.generated.h"
+#include "OBSItemData.generated.h"
 
 /**
  * 
  */
 
 UCLASS()
-class AUTOBATTLERPROJECT_API UOBSItem : public UPrimaryDataAsset
+class AUTOBATTLERPROJECT_API UOBSItemData : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
 public:
 	/** Constructor */
-	UOBSItem(){}
+	UOBSItemData(){}
 
 protected:
 	/** Type of this item, set in native parent class */

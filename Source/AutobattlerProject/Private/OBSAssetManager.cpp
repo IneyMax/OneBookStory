@@ -26,12 +26,12 @@ UOBSAssetManager& UOBSAssetManager::Get()
 	}
 }
 
-UOBSItem* UOBSAssetManager::ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId, bool bLogWarning)
+UOBSItemData* UOBSAssetManager::ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId, bool bLogWarning)
 {
 	FSoftObjectPath ItemPath = GetPrimaryAssetPath(PrimaryAssetId);
 
 	// This does a synchronous load and may hitch
-	UOBSItem* LoadedItem = Cast<UOBSItem>(ItemPath.TryLoad());
+	UOBSItemData* LoadedItem = Cast<UOBSItemData>(ItemPath.TryLoad());
 
 	if (bLogWarning && LoadedItem == nullptr)
 	{

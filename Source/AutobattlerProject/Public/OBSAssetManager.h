@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/AssetManager.h"
-#include "ItemsData/OBSItem.h"
+#include "ItemsData/OBSItemData.h"
 #include "OBSAssetManager.generated.h"
 
 /**
@@ -35,5 +35,5 @@ public:
 	 * @param PrimaryAssetId The asset identifier to load
 	 * @param bDisplayWarning If true, this will log a warning if the item failed to load
 	 */
-	UOBSItem* ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId, bool bLogWarning = true);
+	UOBSItemData* ForceLoadItem(const FPrimaryAssetId& PrimaryAssetId, bool bLogWarning = true);
 };

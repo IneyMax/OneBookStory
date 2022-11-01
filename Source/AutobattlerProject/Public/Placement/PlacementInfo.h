@@ -4,9 +4,6 @@
 #include "PlacementInfo.generated.h"
 
 
-class APlacementBase;
-
-
 USTRUCT(BlueprintType)
 struct AUTOBATTLERPROJECT_API FOBSPlacementInfo
 {
@@ -15,7 +12,6 @@ struct AUTOBATTLERPROJECT_API FOBSPlacementInfo
 	FOBSPlacementInfo(): PlacementFront(), Index(0), bIsEmpty(false), bIsPlayer(false)
 	{
 	}
-	;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Placement)
@@ -35,5 +31,5 @@ struct AUTOBATTLERPROJECT_API FOBSPlacementInfo
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Placement)
-	TArray<APlacementBase*> Neighbours;
+	TArray<int32> Neighbours;
 };

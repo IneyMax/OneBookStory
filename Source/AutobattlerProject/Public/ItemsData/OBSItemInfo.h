@@ -1,7 +1,8 @@
 ﻿#pragma once
 
 
-#include "OBSAbility.h"
+#include "CreatureInfo.h"
+#include "WeaponInfo.h"
 #include "AutobattlerProject/OBSEnums.h"
 #include "OBSItemInfo.generated.h"
 
@@ -11,21 +12,17 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 {
 	GENERATED_BODY()
 	
-	FOBSItemInfo(): IsValid(false), ItemUniqueIndex(0), Rank(0)
+	FOBSItemInfo(): Rank(0)
 	{
-	};
-
-	/**  */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	bool IsValid;
-	
-	/**  */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 ItemUniqueIndex;
+	}
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	FName Name;
+
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	int32 Rank;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
@@ -37,7 +34,11 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Rank;
+	FCreatureInfo CreatureInfo;
+
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	FWeaponInfo WeaponInfo;
 };
 
 
