@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 
+#include "OBSAbility.h"
 #include "AutobattlerProject/OBSEnums.h"
 #include "OBSItemInfo.generated.h"
 
@@ -10,47 +11,33 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 {
 	GENERATED_BODY()
 	
-	FOBSItemInfo(): Species(ECreatureSpecies::None), Fraction(ECreatureFraction::None), Rank(0)
+	FOBSItemInfo(): IsValid(false), ItemUniqueIndex(0), Rank(0)
 	{
 	};
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	ECreatureSpecies Species;
+	bool IsValid;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	ECreatureFraction Fraction;
-
-	/**  */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Rank;
+	int32 ItemUniqueIndex;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	FName Name;
+	
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	TArray<ECreatureSpecies> Species;
+	
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	TArray<ECreatureFraction> Fraction;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	FText Description;
-};
-
-
-USTRUCT(BlueprintType)
-struct AUTOBATTLERPROJECT_API FOBSCreatureInfo
-{
-	GENERATED_BODY()
-	
-	FOBSCreatureInfo(): Attack(0), Health(0)
-	{
-	};
-	
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Attack;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Health;
+	int32 Rank;
 };
 
 

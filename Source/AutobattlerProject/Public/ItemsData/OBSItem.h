@@ -26,7 +26,7 @@ protected:
 	FPrimaryAssetType ItemType;
 
 	/** User-visible short name */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, BlueprintGetter = GetItemInfo, Category = Item)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, BlueprintGetter = GetItemInfo, Category = Item)
 	FOBSItemInfo ItemInfo;
 
 public:
