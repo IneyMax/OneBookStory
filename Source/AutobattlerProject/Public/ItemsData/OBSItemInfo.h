@@ -38,6 +38,10 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	int32 WeaponCount;
+	
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	FWeaponInfo WeaponInfo;
 };
 

@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "AutobattlerProject/OBSEnums.h"
+#include "Enum/OBSEnum.h"
 #include "PlacementInfo.generated.h"
 
 
@@ -15,11 +16,11 @@ struct AUTOBATTLERPROJECT_API FOBSPlacementInfo
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Placement)
-	EPlacementFront PlacementFront;
-
+	int32 Index;
+	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Placement)
-	int32 Index;
+	EPlacementFront PlacementFront;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Placement)

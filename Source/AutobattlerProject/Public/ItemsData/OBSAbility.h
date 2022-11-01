@@ -2,6 +2,7 @@
 
 #include <AutobattlerProject/OBSEnums.h>
 #include "OBSAbilityEffect.h"
+#include "Enum/OBSEnum.h"
 #include "OBSAbility.generated.h"
 
 

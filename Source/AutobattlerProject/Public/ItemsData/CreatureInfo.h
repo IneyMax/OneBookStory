@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "OBSAbility.h"
+#include "Enum/OBSEnum.h"
 
 #include "CreatureInfo.generated.h"
 
