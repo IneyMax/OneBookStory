@@ -10,7 +10,7 @@ struct AUTOBATTLERPROJECT_API FOBSPlacementInfo
 {
 	GENERATED_BODY()
 	
-	FOBSPlacementInfo(): PlacementFront(), Index(0), bIsEmpty(false), bIsPlayer(false)
+	FOBSPlacementInfo(): Index(0), PlacementFront(), bIsEmpty(false), bIsPlayer(false)
 	{
 	}
 
