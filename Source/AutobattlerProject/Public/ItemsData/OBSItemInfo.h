@@ -12,7 +12,7 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 {
 	GENERATED_BODY()
 	
-	FOBSItemInfo(): Rank(0)
+	FOBSItemInfo(): Rank(0), WeaponCount(0)
 	{
 	}
 
