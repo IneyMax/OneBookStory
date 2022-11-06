@@ -6,7 +6,7 @@
 #include "AutobattlerProject/OBSEnums.h"
 #include "OBSItemInfo.generated.h"
 
-
+/** Test */
 USTRUCT(BlueprintType)
 struct AUTOBATTLERPROJECT_API FOBSItemInfo
 {
