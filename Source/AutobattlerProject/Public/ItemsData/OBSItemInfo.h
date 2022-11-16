@@ -18,11 +18,11 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 Rank;
+	FName ItemIdentifier;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TArray<ESpecie> Species;
+	int32 Rank;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)

@@ -13,19 +13,6 @@ enum class EItemType : uint8
 };
 ENUM_RANGE_BY_COUNT(EItemType, EItemType::Max)
 
-
-UENUM(BlueprintType)
-enum class ESpecie : uint8
-{
-	None UMETA(DisplayName = "None"),
-	Specie1 UMETA(DisplayName = "Specie1"),
-	Specie2 UMETA(DisplayName = "Specie2"),
-	Specie3 UMETA(DisplayName = "Specie3"),
-	Max  UMETA ( Hidden )
-};
-ENUM_RANGE_BY_COUNT(ESpecie, ESpecie::Max)
-
-
 UENUM(BlueprintType)
 enum class EFraction : uint8
 {
