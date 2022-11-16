@@ -12,13 +12,9 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 {
 	GENERATED_BODY()
 	
-	FOBSItemInfo(): Rank(0), WeaponCount(0)
+	FOBSItemInfo(): Rank(0)
 	{
 	}
-
-	/**  */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	FName Name;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
@@ -26,19 +22,15 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TArray<ECreatureSpecie> Species;
+	TArray<ESpecie> Species;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TArray<ECreatureFraction> Fraction;
+	TArray<EFraction> Fraction;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	FCreatureInfo CreatureInfo;
-
-	/**  */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	int32 WeaponCount;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)

@@ -10,19 +10,27 @@ struct AUTOBATTLERPROJECT_API FCreatureInfo
 {
 	GENERATED_BODY()
 	
-	FCreatureInfo(): IsValid(false)
+	FCreatureInfo(): IsValid(false), WeaponCount(0)
 	{
 	}
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	bool IsValid;
-
+	
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	FName CreatureName;
+	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
 	TArray<FOBSAbility> Abilities;
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TMap<ECreatureStats, int32> CreatureStats;
+	TMap<EBattleStats, int32> CreatureStats;
+
+	/**  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
+	int32 WeaponCount;
 };

@@ -15,7 +15,7 @@ ENUM_RANGE_BY_COUNT(EItemType, EItemType::Max)
 
 
 UENUM(BlueprintType)
-enum class ECreatureSpecie : uint8
+enum class ESpecie : uint8
 {
 	None UMETA(DisplayName = "None"),
 	Specie1 UMETA(DisplayName = "Specie1"),
@@ -23,11 +23,11 @@ enum class ECreatureSpecie : uint8
 	Specie3 UMETA(DisplayName = "Specie3"),
 	Max  UMETA ( Hidden )
 };
-ENUM_RANGE_BY_COUNT(ECreatureSpecie, ECreatureSpecie::Max)
+ENUM_RANGE_BY_COUNT(ESpecie, ESpecie::Max)
 
 
 UENUM(BlueprintType)
-enum class ECreatureFraction : uint8
+enum class EFraction : uint8
 {
 	None UMETA(DisplayName = "None"),
 	Fraction1 UMETA(DisplayName = "Fraction1"),
@@ -35,7 +35,7 @@ enum class ECreatureFraction : uint8
 	Fraction3 UMETA(DisplayName = "Fraction3"),
 	Max  UMETA ( Hidden )
 };
-ENUM_RANGE_BY_COUNT(ECreatureFraction, ECreatureFraction::Max)
+ENUM_RANGE_BY_COUNT(EFraction, EFraction::Max)
 
 
 UENUM(BlueprintType)
@@ -62,12 +62,12 @@ ENUM_RANGE_BY_COUNT(EPlacementFront, EPlacementFront::Max)
 
 
 UENUM(BlueprintType)
-enum class ECreatureStats : uint8
+enum class EBattleStats : uint8
 {
 	None UMETA(DisplayName = "None"),
 	Attack UMETA(DisplayName = "Attack"),
 	Health UMETA(DisplayName = "Health"),
 	Max  UMETA ( Hidden )
 };
-ENUM_RANGE_BY_COUNT(ECreatureStats, ECreatureStats::Max)
+ENUM_RANGE_BY_COUNT(EBattleStats, EBattleStats::Max)
 

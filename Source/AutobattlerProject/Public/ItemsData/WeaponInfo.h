@@ -27,5 +27,5 @@ struct AUTOBATTLERPROJECT_API FWeaponInfo
 
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TMap<ECreatureStats, int32> AdditionalStats;
+	TMap<EBattleStats, int32> WeaponStats;
 };
