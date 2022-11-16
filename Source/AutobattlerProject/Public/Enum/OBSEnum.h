@@ -15,15 +15,15 @@ ENUM_RANGE_BY_COUNT(EItemType, EItemType::Max)
 
 
 UENUM(BlueprintType)
-enum class ECreatureSpecies : uint8
+enum class ECreatureSpecie : uint8
 {
 	None UMETA(DisplayName = "None"),
-	Species1 UMETA(DisplayName = "Species1"),
-	Species2 UMETA(DisplayName = "Species2"),
-	Species3 UMETA(DisplayName = "Species3"),
+	Specie1 UMETA(DisplayName = "Specie1"),
+	Specie2 UMETA(DisplayName = "Specie2"),
+	Specie3 UMETA(DisplayName = "Specie3"),
 	Max  UMETA ( Hidden )
 };
-ENUM_RANGE_BY_COUNT(ECreatureSpecies, ECreatureSpecies::Max)
+ENUM_RANGE_BY_COUNT(ECreatureSpecie, ECreatureSpecie::Max)
 
 
 UENUM(BlueprintType)

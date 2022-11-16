@@ -26,7 +26,7 @@ struct AUTOBATTLERPROJECT_API FOBSItemInfo
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
-	TArray<ECreatureSpecies> Species;
+	TArray<ECreatureSpecie> Species;
 	
 	/**  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Item)
