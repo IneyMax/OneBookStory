@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e498beba-0f42-4564-9eef-57dd65ce9f21" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/AutobattlerProject/Blueprint/Core/BP_MainGameInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AutobattlerProject/Blueprint/Core/BP_MainGameInstance.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AutobattlerProject/Blueprint/EventManagers/BP_NetworkEventManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AutobattlerProject/Blueprint/EventManagers/BP_NetworkEventManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_GameSessionRow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_GameSessionRow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_GameSessions.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_GameSessions.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_NetworkManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AutobattlerProject/UI/Menu/Network/WBP_NetworkManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AutobattlerProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AutobattlerProject.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
